@@ -4,6 +4,7 @@ var dog, happyDog;
 var database;
 var foodS;
 var foodStock;
+var dogImage, happyDogImage;
 
 function preload()
 {
