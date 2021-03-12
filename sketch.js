@@ -17,9 +17,10 @@ function setup() {
 	database = firebase.database();
 
   createCanvas(500, 500);
-  dog = createSprite(30, 30, 250, 250);
+  dog = createSprite(300, 300, 50, 50);
 
   dog.addImage(dogImage);
+  dog.scale = 0.25;
 
   foodStock = database.ref('Food');
   foodStock.on("value", readStock);
@@ -39,9 +40,8 @@ function draw() {
   //add styles here
 
   fill("white");
-  stroke(10);
-  text("NOTE: Press UP_ARROW To Feed Drago Milk!");
   textSize(10);
+  text("NOTE: Press UP_ARROW To Feed Drago Milk!", 200, 20);
 
 }
 
